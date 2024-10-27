@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+
+<body>
+    <div id="main-menu" class="menu">
+        <h1>Ping Pong Game</h1>
+        <button id="play-button">Play</button>
+    </div>
+
+    <div id="mode-selection" class="menu hidden">
+        <h2>Select Game Mode</h2>
+        <button id="one-player">1 Player</button>
+        <button id="two-player">2 Player</button>
+        <button id="back-button">Back</button> <!-- Back Button -->
+    </div>
+
+    <!-- Score Limit Popup -->
+    <div id="score-popup" class="popup hidden">
+        <span class="close" id="close-popup">×</span>
+        <h3>Total Points to Play Up To...</h3>
+        <input type="number" id="score-input" placeholder="Score Limit" min="1" />
+        <button id="start">Start</button>
+        <div id="loading" class="hidden">Loading...</div> <!-- Loading message -->
+    </div>
+
+
+    <script src="index3.js"></script>
+</body>
+
+</html>
